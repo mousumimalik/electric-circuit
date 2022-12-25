@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.circuit-container {
+    width: 50vw;
+    height: 50vh;
+    border: 5px solid black;
+    position: relative;
+    stroke-dasharray: 91 !important;
+	stroke-dashoffset: 91;
+	animation: a 3s linear forwards;
+}
+
+.circuit-container .light {
+    font-size: 30px;
+    color: gray;
+    padding: 10px;
+    background: #FFFF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.circuit-container .bulb {
+    position: absolute;
+    top: -10%;
+    left: 40%;
+}
+
+.circuit-container .swittch {
+    position: absolute;
+    top: 70%;
+    left: -4%;
+}
+
+.circuit-container .swittch .fa-random {
+    font-size: 30px;
+    color: red;
+    padding: 10px;
+    background: #FFFF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.circuit-container .battery {
+    position: absolute;
+    top: 93%;
+    left: 40%;
+}
+
+.circuit-container .battery .fa-car-battery {
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    background: #FFFF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: green;
+}
+
+.circuit-container .red {
+    font-size: 30px;
+    color: yellow;
+    opacity:0.4;
+    transform-origin: 50% 50%;
+    display: none;
+}
+
+
+.circuit-container .fa-angle-up {
+    position: absolute;
+    top: 30%;
+    left: -2%;
+}
+
+
+.circuit-container .fa-angle-down {
+    position: absolute;
+    top: 40%;
+    left: 99%
+}
+
+
+.circuit-container .fa-angle-right {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+}
+
+.circuit-container .fa-angle-right.right2 {
+    left: 70%;
+}
+
+
+.circuit-container .fa-angle-left {
+    position: absolute;
+    top: 97%;
+    left: 20%;
+}
+
+.circuit-container .fa-angle-left.left2 {
+    left: 70%;
+}
+
+
+.red-light {
+    font-size: 35px;
+    color: yellow;
+    padding: 10px;
+    background: #FFFF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.arrow-light {
+    font-size: 30px;
+    color: yellow;
+}
+
+.fa-angle-up {
+    -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+    border-bottom: 1em solid rgb(206, 206, 69);
+}
+
+.fa-angle-down {
+    -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+    border-top: 1em solid rgb(206, 206, 69);
+}
+
+.fa-angle-right {
+    -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
+    border-left: 1em solid rgb(206, 206, 69);
+}
+
+.fa-angle-left {
+    -webkit-animation: rightarrow 0.6s infinite alternate ease-in-out;
+    border-right: 1em solid rgb(206, 206, 69);
+}
+  
+
+@-webkit-keyframes uparrow {
+    0% {
+        -webkit-transform: translateY(0); 
+        opacity: 0.4; 
+    }
+    100% { 
+        -webkit-transform: translateY(-0.4em); 
+        opacity: 0.9;
+    }
+}
+  
+@-webkit-keyframes downarrow {
+    0% { 
+        -webkit-transform: translateY(0); 
+        opacity: 0.4; 
+    }
+    100% { 
+        -webkit-transform: translateY(0.4em); 
+        opacity: 0.9; 
+    }
+}
+
+@-webkit-keyframes rightarrow {
+    0% { 
+        -webkit-transform: translateX(0); 
+        opacity: 0.4; 
+    }
+    100% { 
+        -webkit-transform: translateX(-0.4em); 
+        opacity: 0.9; 
+    }
+}
+
+@-webkit-keyframes leftarrow {
+    0% { 
+        -webkit-transform: translateX(0); 
+        opacity: 0.4; 
+    }
+    100% { 
+        -webkit-transform: translateX(-0.4em); 
+        opacity: 0.9; 
+    }
+}

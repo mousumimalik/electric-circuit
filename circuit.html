@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./circuit.css">
+    <title>Electric Circuit</title>
+</head>
+<body>
+
+
+    <div class="circuit-container" id="line">
+        <div class="bulb">
+            <i class="fas fa-lightbulb light"></i>
+        </div>
+        <div class="swittch">
+            <i onclick="switched(this)" class="fas fa-random" id="switch"></i>
+        </div>
+        <div class="battery">
+            <i class="fas fa-car-battery"></i>
+        </div>
+        <i class="fas fa-angle-up red first"></i>
+        <i class="fas fa-angle-down red second"></i>
+        <i class="fas fa-angle-right red first"></i>
+        <i class="fas fa-angle-right right2 red second"></i>
+        <i class="fas fa-angle-left red second"></i>
+        <i class="fas fa-angle-left left2 red second"></i>
+    </div>
+
+
+    <script src="./circuit.js"></script>
+</body>
+</html>
